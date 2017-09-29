@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    tools:context="w7.com.br.calculadorasumup.MainActivity">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:id="@+id/label_plano"
+            android:text="@string/plano_acelerado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="9pt"/>
+        <TextView
+            android:id="@+id/label_taxas"
+            android:text="@string/taxas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textSize="9pt"/>
+        <TextView
+            android:id="@+id/label_acrescimo"
+            android:text="@string/acrescimo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textSize="9pt"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/lbl_tx_ac_debito"
+            android:text="@string/tx_debito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="9pt"/>
+
+        <TextView
+            android:id="@+id/tx_ac_debito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="{TX}"
+            android:textAlignment="center"
+            android:textSize="8pt"/>
+    </TableRow>
+    <TableRow>
+    <TextView
+        android:id="@+id/lbl_tx_ac_credito_vista"
+        android:text="@string/tx_credito_vista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="9pt"/>
+
+    <TextView
+        android:id="@+id/tx_ac_credito_vista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{TX}"
+        android:textAlignment="center"
+        android:textSize="8pt"/>
+    </TableRow>
+
+    <TableRow>
+    <TextView
+        android:id="@+id/lbl_tx_ac_credito_parcelado"
+        android:text="@string/tx_credito_parcelado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="9pt"/>
+
+    <TextView
+        android:id="@+id/tx_ac_credito_parcelado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{TX}"
+        android:textAlignment="center"
+        android:textSize="8pt"/>
+
+    <TextView
+        android:id="@+id/tx_ac_credito_parcelado_acrescimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="{TX}"
+        android:textAlignment="center"
+        android:textSize="8pt"/>
+    </TableRow>
+    <Button
+        android:id="@+id/btn_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_calcular"
+        android:textSize="9pt" />
+</TableLayout>

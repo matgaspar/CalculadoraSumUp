@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora SumUp</string>
+    <string name="plano_acelerado">Plano Acelerado</string>
+    <string name="plano_economico">Plano Econômico</string>
+    <string name="taxas">Taxas</string>
+    <string name="acrescimo">Acréscimo</string>
+    <string name="tx_debito">Débito</string>
+    <string name="tx_credito_vista">Crédito à Vista</string>
+    <string name="tx_credito_parcelado">Crédito Parcelado</string>
+
+    <!-- BOTÕES -->
+    <string name="btn_calcular">Calcular</string>
+</resources>
