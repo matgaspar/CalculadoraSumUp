@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
+        // MobileAds.initialize(this, "ca-app-pub-3505870887693310/8124891209");
+
         TextView tx_ac_debito = (TextView) findViewById(R.id.tx_ac_debito);
         TextView tx_ac_credito_vista = (TextView) findViewById(R.id.tx_ac_credito_vista);
         TextView tx_ac_credito_parcelado = (TextView) findViewById(R.id.tx_ac_credito_parcelado);
@@ -24,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
 
         // Restore preferences
         SharedPreferences settings = getSharedPreferences(PARAM, 0);
-        float debito = settings.getFloat("debito", (float)2.3);
-        float credito_vista = settings.getFloat("credito_vista", (float)4.6);
-        float credito_parcelado = settings.getFloat("credito_parcelado", (float)4.6);
-        float credito_parcelado_acrescimo = settings.getFloat("credito_parcelado_acrescimo", (float)1.5);
+        float debito = settings.getFloat("debito", 0);
+        float credito_vista = settings.getFloat("credito_vista", 0);
+        float credito_parcelado = settings.getFloat("credito_parcelado", 0);
+        float credito_parcelado_acrescimo = settings.getFloat("credito_parcelado_acrescimo", 0);
 
         tx_ac_debito.setText(Float.toString(debito));
         tx_ac_credito_vista.setText(Float.toString(credito_vista));

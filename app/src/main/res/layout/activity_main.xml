@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:shrinkColumns="*"
-    android:stretchColumns="*"
-    tools:context="w7.com.br.calculadorasumup.MainActivity">
+    tools:context="w7.com.br.calculadorasumup.MainActivity"
+    style="@style/AppTheme">
+
+    <TableLayout
+        android:layout_margin="@dimen/tbl_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        style="@style/AppTheme.Tabela">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/lbl_valor_venda"
+                android:text="@string/lbl_valor_venda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                style="@style/AppTheme.Label"/>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/campo_valor_venda"
+                android:layout_span="3"
+                style="@style/AppTheme.Campos"/>
+        </TableRow>
+        <TableRow>
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_calcular"
+            android:layout_span="3"
+            android:textSize="9pt" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/separator"
+            android:padding="20dp"></TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/lbl_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cabecalho"
+            android:layout_span="3"
+            android:textAlignment="center"
+            style="@style/AppTheme.Tabela.Cabecalho"/>
+    </TableRow>
 
     <TableRow
         android:layout_height="wrap_content"
@@ -15,47 +60,43 @@
         <TextView
             android:id="@+id/label_plano"
             android:text="@string/plano_acelerado"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
-            android:textSize="9pt"/>
+            style="@style/AppTheme.Tabela.Titulo"/>
         <TextView
             android:id="@+id/label_taxas"
             android:text="@string/taxas"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
             android:textAlignment="center"
-            android:textSize="9pt"/>
+            style="@style/AppTheme.Tabela.Titulo"/>
         <TextView
             android:id="@+id/label_acrescimo"
             android:text="@string/acrescimo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorAccent"
             android:textAlignment="center"
-            android:textSize="9pt"/>
+            style="@style/AppTheme.Tabela.Titulo"/>
     </TableRow>
     <TableRow>
         <TextView
             android:id="@+id/lbl_tx_ac_debito"
             android:text="@string/tx_debito"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="9pt"/>
+            style="@style/AppTheme.Tabela.Subtitulo"/>
 
         <TextView
             android:id="@+id/tx_ac_debito"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="{TX}"
             android:textAlignment="center"
-            android:textSize="8pt"/>
+            style="@style/AppTheme.Tabela.Cell"/>
+        <TextView
+            android:text="-"
+            android:textAlignment="center"
+            style="@style/AppTheme.Tabela.Cell"/>
     </TableRow>
     <TableRow>
     <TextView
@@ -63,9 +104,7 @@
         android:text="@string/tx_credito_vista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="9pt"/>
+        style="@style/AppTheme.Tabela.Subtitulo"/>
 
     <TextView
         android:id="@+id/tx_ac_credito_vista"
@@ -73,7 +112,11 @@
         android:layout_height="wrap_content"
         android:text="{TX}"
         android:textAlignment="center"
-        android:textSize="8pt"/>
+        style="@style/AppTheme.Tabela.Cell"/>
+        <TextView
+            android:text="-"
+            android:textAlignment="center"
+            style="@style/AppTheme.Tabela.Cell"/>
     </TableRow>
 
     <TableRow>
@@ -82,9 +125,7 @@
         android:text="@string/tx_credito_parcelado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="9pt"/>
+        style="@style/AppTheme.Tabela.Subtitulo"/>
 
     <TextView
         android:id="@+id/tx_ac_credito_parcelado"
@@ -92,7 +133,7 @@
         android:layout_height="wrap_content"
         android:text="{TX}"
         android:textAlignment="center"
-        android:textSize="8pt"/>
+        style="@style/AppTheme.Tabela.Cell"/>
 
     <TextView
         android:id="@+id/tx_ac_credito_parcelado_acrescimo"
@@ -100,12 +141,7 @@
         android:layout_height="wrap_content"
         android:text="{TX}"
         android:textAlignment="center"
-        android:textSize="8pt"/>
+        style="@style/AppTheme.Tabela.Cell"/>
     </TableRow>
-    <Button
-        android:id="@+id/btn_calcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_calcular"
-        android:textSize="9pt" />
-</TableLayout>
+    </TableLayout>
+</LinearLayout>

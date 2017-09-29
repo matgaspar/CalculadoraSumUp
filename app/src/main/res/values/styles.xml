@@ -6,26 +6,85 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-        <!-- enable window content transitions -->
-        <item name="android:windowContentTransitions">true</item>
-
-        <!-- specify enter and exit transitions -->
-        <item name="android:windowEnterTransition">@transition/explode</item>
-        <item name="android:windowExitTransition">@transition/explode</item>
-
-        <!-- specify shared element transitions -->
-        <item name="android:windowSharedElementEnterTransition">
-            @transition/change_image_transform</item>
-        <item name="android:windowSharedElementExitTransition">
-            @transition/change_image_transform</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
     </style>
 
-    <style name="Title" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme.Tabela" parent="AppTheme">
     </style>
+
+    <style name="AppTheme.Tabela.Cell" parent="AppTheme">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textSize">7pt</item>
+    </style>
+
+    <style name="AppTheme.Tabela.Cabecalho" parent="AppTheme">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">15pt</item>
+    </style>
+
+    <style name="AppTheme.Tabela.Cabecalho2" parent="AppTheme">
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">15pt</item>
+    </style>
+
+    <style name="AppTheme.Tabela.Subcabecalho" parent="AppTheme">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimary2</item>
+        <item name="android:textSize">13pt</item>
+    </style>
+
+    <style name="AppTheme.Tabela.Titulo" parent="AppTheme">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">8pt</item>
+    </style>
+
+    <style name="AppTheme.Tabela.Subtitulo" parent="AppTheme">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">7pt</item>
+    </style>
+
+    <style name="AppTheme.Tabela.Subtitulo2" parent="AppTheme">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">8pt</item>
+    </style>
+
+    <style name="AppTheme.Label" parent="AppTheme">
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">12pt</item>
+    </style>
+
+    <style name="AppTheme.Campos" parent="AppTheme">
+        <item name="android:padding">@dimen/tbl_padding</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">13pt</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

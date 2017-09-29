@@ -1,13 +1,26 @@
 <resources>
-    <string name="app_name">Calculadora SumUp</string>
-    <string name="plano_acelerado">Plano Acelerado</string>
-    <string name="plano_economico">Plano Econômico</string>
-    <string name="taxas">Taxas</string>
-    <string name="acrescimo">Acréscimo</string>
-    <string name="tx_debito">Débito</string>
-    <string name="tx_credito_vista">Crédito à Vista</string>
-    <string name="tx_credito_parcelado">Crédito Parcelado</string>
+    <string name="app_name">CALCULADORA SUMUP</string>
+    <string name="cabecalho">TAXAS</string>
+    <string name="plano_acelerado">PLANO ACELERADO</string>
+    <string name="plano_economico">PLANO ECONÔMICO</string>
+    <string name="taxas">TAXAS</string>
+    <string name="acrescimo">ACRÉSC</string>
+    <string name="tx_debito">DÉBITO</string>
+    <string name="tx_credito_vista">CRÉDITO A VISTA</string>
+    <string name="tx_credito_parcelado">CRÉDITO PARCELADO</string>
+    <string name="lbl_valor_venda">VALOR DA VENDA</string>
+    <string name="lbl_detalhes">DETALHES</string>
+    <string name="lbl_parcela_unica">PARCELA ÚNICA</string>
+    <string name="lbl_assumindo">ASSUMINDO</string>
+    <string name="lbl_repasse">REPASSE</string>
+    <string name="lbl_aumento">AUMENTO</string>
+    <string name="lbl_liquido">LÍQUIDO</string>
+    <string name="lbl_parcela">PARCELA</string>
+    <string name="lbl_valor_taxa">VALOR DA TAXA</string>
+    <string name="lbl_valor_recebido">VALOR RECEBIDO</string>
+    <string name="lbl_valor_cobrar">VALOR A COBRAR</string>
 
     <!-- BOTÕES -->
-    <string name="btn_calcular">Calcular</string>
+    <string name="btn_calcular">CALCULAR</string>
+    <string name="title_activity_resultado">DETALHES DA VENDA</string>
 </resources>

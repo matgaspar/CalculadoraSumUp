@@ -26,5 +26,9 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:26.+'
+    compile 'com.google.android.gms:play-services-ads:11.2.0'
     testCompile 'junit:junit:4.12'
 }
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'
