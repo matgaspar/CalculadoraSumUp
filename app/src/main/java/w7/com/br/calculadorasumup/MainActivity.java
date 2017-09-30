@@ -8,9 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String PARAM = "Parametros";
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         TextView tx_ac_credito_vista = (TextView) findViewById(R.id.tx_ac_credito_vista);
         TextView tx_ac_credito_parcelado = (TextView) findViewById(R.id.tx_ac_credito_parcelado);
         TextView tx_ac_credito_parcelado_acrescimo = (TextView) findViewById(R.id.tx_ac_credito_parcelado_acrescimo);
+
+        setAnalytic("1", "Teste 1");
+        setAnalytic("12", "Teste 12");
+        setAnalytic("123", "Teste 123");
+        setAnalytic("1234", "Teste 1234");
+        setAnalytic("12345", "Teste 12345");
 
         // Restore preferences
         SharedPreferences settings = getSharedPreferences(PARAM, 0);
@@ -41,13 +52,25 @@ public class MainActivity extends AppCompatActivity {
         btn_calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ResultadoActivity.class);
+                Intent intent = new Intent(MainActivity.this, TabelaActivity.class);
 
                 startActivity(intent);
             }
         });
 
     }
+
+    protected void setAnalytic(String id, String name){
+        // Obtain the FirebaseAnalytics instance.
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, id);
+        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name);
+        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "image");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+    }
+
     @Override
     protected void onStop(){
         super.onStop();

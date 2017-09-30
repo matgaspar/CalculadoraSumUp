@@ -23,4 +23,8 @@
     <!-- BOTÕES -->
     <string name="btn_calcular">CALCULAR</string>
     <string name="title_activity_resultado">DETALHES DA VENDA</string>
+
+    <!-- ADS-->
+    <string name="banner_ad_unit_id">ca-app-pub-3505870887693310/8124891209</string>
+    <string name="title_activity_tabela">TabelaActivity</string>
 </resources>

@@ -9,8 +9,7 @@
         <item name="android:windowBackground">@color/colorBackground</item>
     </style>
 
-    <style name="AppTheme.Tabela" parent="AppTheme">
-    </style>
+    <style name="AppTheme.Tabela" parent="AppTheme"></style>
 
     <style name="AppTheme.Tabela.Cell" parent="AppTheme">
         <item name="android:background">@drawable/cell_shape</item>

@@ -25,6 +25,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="w7.com.br.calculadorasumup.MainActivity" />
         </activity>
+        <activity
+            android:name=".TabelaActivity"
+            android:label="@string/title_activity_tabela"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="w7.com.br.calculadorasumup.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

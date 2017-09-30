@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "979526834628-js4e114nhrr5kml5l403k6luh95rmr3o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "w7.com.br.calculadorasumup",
+            "certificate_hash": "ca68344b0f614595a384396e71e1d216eeacae5d"
+          }
+        },
+        {
           "client_id": "979526834628-kgijav4ksevp2ti0p5gkuqumahb7bi1o.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979526834628-kgijav4ksevp2ti0p5gkuqumahb7bi1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
