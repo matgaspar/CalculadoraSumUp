@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">CALCULADORA SUMUP</string>
+    <string name="title_activity_tabela">Resultado</string>
     <string name="cabecalho">TAXAS</string>
     <string name="plano_acelerado">PLANO ACELERADO</string>
     <string name="plano_economico">PLANO ECONÔMICO</string>
@@ -25,6 +26,14 @@
     <string name="title_activity_resultado">DETALHES DA VENDA</string>
 
     <!-- ADS-->
-    <string name="banner_ad_unit_id">ca-app-pub-3505870887693310/8124891209</string>
-    <string name="title_activity_tabela">TabelaActivity</string>
+    <string name="ad_app_id">ca-app-pub-3505870887693310~5972714044</string>
+    <string name="ad_banner_id">ca-app-pub-3505870887693310/8124891209</string>
+    <string name="ad_intersticial_id">ca-app-pub-3505870887693310/8052824731</string>
+
+    <string name="ad_native_id">ca-app-pub-3505870887693310/1174509478</string>
+    <string name="ad_native_id2">ca-app-pub-3505870887693310/4262695485</string>
+
+    <!-- TESTE -->
+    <string name="ad_testdevice_id">6A759A7567CDB6E80ED74AD2FA573E21</string>
+    <string name="admob_test_id">ca-app-pub-3940256099942544/2177258514</string>
 </resources>

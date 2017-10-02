@@ -8,9 +8,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class ResultadoActivity extends AppCompatActivity {
 
     public static final String PARAM = "Parametros";
+    private AdView ad_banner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,9 @@ public class ResultadoActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        ad_banner = (AdView) findViewById(R.id.ad_banner);
+        ad_banner.loadAd(loadRequest());
+
         // Restore preferences
         SharedPreferences settings = getSharedPreferences(PARAM, 0);
         float debito = settings.getFloat("debito", 0);
@@ -36,4 +43,16 @@ public class ResultadoActivity extends AppCompatActivity {
         float credito_parcelado_acrescimo = settings.getFloat("credito_parcelado_acrescimo", 0);
     }
 
+
+    private AdRequest loadRequest(){
+        return new AdRequest.Builder()
+                //.addTestDevice(getString(R.string.adsmob_testdevice_id))
+                .build();
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
 }
